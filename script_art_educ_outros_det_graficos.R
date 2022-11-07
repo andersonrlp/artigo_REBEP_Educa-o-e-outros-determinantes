@@ -1,24 +1,24 @@
 #--------------------------------------------------#
-#### SCRIPT - GRÁFICOS DESCRITIVOS ARTIGO REBEP ####
+#### SCRIPT - GRÃFICOS DESCRITIVOS ARTIGO REBEP ####
 #--------------------------------------------------#
-## Educação e outros determinantes da participação laboral
+## EducaÃ§Ã£o e outros determinantes da participaÃ§Ã£o laboral
 ## de adultos mais velhos no Brasil
 
-## Script para criação dos gráficos descritivos
-## para as variáveis de nível individual dos Censos e da
+## Script para criaÃ§Ã£o dos grÃ¡ficos descritivos
+## para as variÃ¡veis de nÃ­vel individual dos Censos e da
 ## PNAD.
 
 cat("\014") # limpa a tela Console (CTRL+L)
 rm(list = ls(all = T)) # limpa environment
-options(scipen = 999) # desabilita numeração científica
-graphics.off() # apaga gráficos
+options(scipen = 999) # desabilita numeraÃ§Ã£o cientÃ­fica
+graphics.off() # apaga grÃ¡ficos
 
 #### I) Pacotes ####
 library(lattice)
 library(dplyr)
 
 #### Dados ####
-setwd('C:/Users/Anderson Rocha/Desktop/Anderson Rocha/1 UFMG/7 Estudos para publicação/1_em_desenvolvimento/3educ_trab/dados')
+setwd() # set directory
 load('graph_descr_data.RData')
 
 ### Objetos:
@@ -27,7 +27,7 @@ load('graph_descr_data.RData')
 ## socsec: proporcao de individuos por status de contribuicao previdenciaria e por ano.
 ## retired: proporcao de individuos por status de aposentadoria e por ano.
 
-#### Organização dos dados ####
+#### OrganizaÃ§Ã£o dos dados ####
 agegrp <- c('45-49','50-54','55-59','60-64','65-69','70-74','75-79','80+')
 
 educ$age <- as.factor(educ$age); levels(educ$age) <- agegrp
@@ -35,8 +35,8 @@ clswrk$age <- as.factor(clswrk$age); levels(clswrk$age) <- agegrp
 socsec$age <- as.factor(socsec$age); levels(socsec$age) <- agegrp
 retired$age <- as.factor(retired$age); levels(retired$age) <- agegrp
 
-#### Gráficos ####
-### Idade-Educação
+#### GrÃ¡ficos ####
+### Idade-EducaÃ§Ã£o
 xcex <- 1.2
 (geduc <- 
     barchart(prop ~ age | as.factor(year), data = educ, groups = educ, layout = c(5,1),
@@ -53,10 +53,10 @@ xcex <- 1.2
                                  superpose.polygon = list(col = gray.colors(4,.3,.95, rev = T))),
              auto.key = list(space = 'bottom', corner = c(.95,.85), cex = xcex,
                              columns = 2, fontfamily = 'serif',
-                             text = c('Menor que o primário','Primário',
-                                      'Secundário','Terciário'))))
+                             text = c('Menor que o primÃ¡rio','PrimÃ¡rio',
+                                      'SecundÃ¡rio','TerciÃ¡rio'))))
 
-### Idade-Posição_emprego
+### Idade-PosiÃ§Ã£o_emprego
 xcex <- 1.2
 (gclswrk <- 
     barchart(prop ~ age | as.factor(year), data = clswrk, groups = clswrk, layout = c(5,1),
@@ -74,7 +74,7 @@ xcex <- 1.2
              auto.key = list(space = 'bottom', corner = c(.95,.85), cex = xcex,
                              columns = 3, fontfamily = 'serif')))
 
-### Idade-Contribuição_previdência
+### Idade-ContribuiÃ§Ã£o_previdÃªncia
 xcex <- 1.2
 (gsocsec <- 
     barchart(prop ~ age | as.factor(year), data = socsec, groups = socsec, layout = c(5,1),
@@ -91,9 +91,9 @@ xcex <- 1.2
                                  superpose.polygon = list(col = gray.colors(2,.3,.95, rev = T))),
              auto.key = list(space = 'bottom', corner = c(.95,.85), cex = xcex,
                              columns = 2, fontfamily = 'serif',
-                             text = c('Não contribuintes','Contribuintes'))))
+                             text = c('NÃ£o contribuintes','Contribuintes'))))
 
-### Idade-Aposentadoria_pensão
+### Idade-Aposentadoria_pensÃ£o
 xcex <- 1.2
 (gretired <- 
     barchart(prop ~ age | as.factor(year), data = retired, groups = retired, layout = c(5,1),
@@ -111,4 +111,4 @@ xcex <- 1.2
                                  superpose.polygon = list(col = gray.colors(2,.3,.95, rev = T))),
              auto.key = list(space = 'bottom', corner = c(.95,.85), cex = xcex,
                              columns = 3, fontfamily = 'serif',
-                             text = c('Não aposentados','Aposentados'))))
+                             text = c('NÃ£o aposentados','Aposentados'))))
