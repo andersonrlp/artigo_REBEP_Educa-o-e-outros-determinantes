@@ -2,7 +2,8 @@
 Repositório de dados e códigos do artigo Educaçao e outros determinantes da participação laboral de adultos mais velhos no Brasil
 
 Information about the paper
-#Education and other determinants of older adults’ participation in labor force in Brazil
+
+Education and other determinants of older adults’ participation in labor force in Brazil
 
 ABSTRACT
 
