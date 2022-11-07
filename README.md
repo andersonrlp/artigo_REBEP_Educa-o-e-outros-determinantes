@@ -1,7 +1,7 @@
 # artigo_REBEP_Educacao_e_outros_determinantes
 Repositório de dados e códigos do artigo Educaçao e outros determinantes da participação laboral de adultos mais velhos no Brasil
 
-Uma amostra reduzida dos dados está disponível neste repositório em razão do limite de tamanho para upload de dados.
+Os dados disponíveis neste repositório estão em tamanho reduzido devido ao limite de tamanho para upload.
 
 Information about the paper
 
