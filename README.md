@@ -1,2 +1,2 @@
-# artigo_REBEP_Educacao-e-outros-determinantes
-Repositório de dados e códigos do artigo Educação e outros determinantes da participação laboral de adultos mais velhos no Brasil
+# artigo_REBEP_Educacao_e_outros_determinantes
+Repositório de dados e códigos do artigo Educaçao e outros determinantes da participação laboral de adultos mais velhos no Brasil
