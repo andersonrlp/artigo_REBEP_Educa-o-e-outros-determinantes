@@ -1,4 +1,10 @@
-# artigo_REBEP_Educacao_e_outros_determinantes
+# Educação e outros determinantes da participação laboral de adultos mais velhos no Brasil
+
+Este repositório apresenta parte dos dados e as rotinas do artigo que investiga as características da participação laborativa de adultos mais velhos no Brasil entre 1980 e 2015. Procura-se caracterizar o papel da educação e outros fatores que representam desigualdades sociodemográficas na propensão de ofertar mão de obra desses indivíduos. Artigo aceito para publicação - Revista Brasileira de Estudos de População (REBEP). O artigo é de coautoria de: Bernardo Lanza Queiroz e Anderson Rocha de J. Fernandes.
+
+1. 
+
+
 Repositório de dados e códigos do artigo Educaçao e outros determinantes da participação laboral de adultos mais velhos no Brasil
 
 Os dados disponíveis neste repositório estão em tamanho reduzido devido ao limite de tamanho para upload.
