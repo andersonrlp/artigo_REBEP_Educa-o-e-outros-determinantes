@@ -2,7 +2,7 @@
 
 Este repositório apresenta parte dos dados e as rotinas do artigo que investiga as características da participação laborativa de adultos mais velhos no Brasil entre 1980 e 2015. Procura-se caracterizar o papel da educação e outros fatores que representam desigualdades sociodemográficas na propensão de ofertar mão de obra desses indivíduos. Artigo aceito para publicação - Revista Brasileira de Estudos de População (REBEP). O artigo é de coautoria de: Bernardo Lanza Queiroz e Anderson Rocha de J. Fernandes.
 
-1. Parte dos dados utilizados no desenvolvimento do artigo oriundos dos Censos Demográficos de 1980, 1991, 2000 e 2010 e da Pesquisa Nacional por Amostra de Domicílios (PNAD) de 2015. Disponibilizados em tamanho reduzido em razão do limite para upload.
+1. Parte dos dados utilizados no desenvolvimento do artigo oriundos dos Censos Demográficos de 1980, 1991, 2000 e 2010 e da Pesquisa Nacional por Amostra de Domicílios (PNAD) de 2015. Dados disponibilizados em tamanho reduzido em razão do limite de espaço para upload.
 2. Dados usados para a construção dos gráficos.
 3. Código em Stata (do-file) para cálculo das estatísticas descritivas e estimação dos modelos.
 4. Código em R (script) para a confecção dos gráficos.
