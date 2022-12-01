@@ -10,6 +10,7 @@ Este repositório apresenta parte dos dados e as rotinas do artigo que investiga
 #Informação do artigo
 
 Anderson Rocha de Jesus Fernandes - Centro Federal de Educação Tecnológica - andersonrjf@gmail.com
+
 Bernardo Lanza Queiroz - Universidade Federal de Minas Gerais e Cedeplar - lanza@cedeplar.ufmg.br
 
 Resumo
